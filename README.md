@@ -27,7 +27,7 @@ or
 
 
 
-## Task 1: CS amplifier with resitive load
+## Task 1: CS amplifier with resistive load
 
 ## Components Required:
 - NMOS (nmos4)
