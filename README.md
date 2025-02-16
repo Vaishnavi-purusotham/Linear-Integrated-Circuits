@@ -37,6 +37,7 @@ or
 
 ## Circuit diagram:
 
+![Image](https://github.com/user-attachments/assets/1b2c5533-e1e6-4054-8d47-0d09afde970d)
 
 ## Procedure:
 
@@ -51,48 +52,49 @@ or
    - Connect all circuit components properly.
    - Apply:
      - **Vdd = 1.8V**
-     - **Vgs = 0.9V**
+     - **Vin = 0.9V**
    - Run **DC analysis** to obtain:
-     - **Vout (Output Voltage)**
-     - **Id (Drain Current)**
+     - **Vout**
+     - **Id**
 
 4. **Run Transient Analysis**
    - Apply a **sine wave input**:
-     - **Vgs = 0.9V**
+     - **Vin = 0.9V**
      - **Amplitude = 50mV**
      - **Frequency = 1kHz**
-   - Run **transient analysis** to observe the output waveform.
-
-5. **Conduct AC Analysis**
-   - Make sure all required library files are included.
+   - Run **transient analysis**
+   - 
+5. **Run AC Analysis**
+   - Include all required library files.
    - Run **AC analysis** with:
-     - Frequency sweep: **0.1Hz to 1THz**
-   - Observe the **gain and frequency response**.
+     -Start and end frequency: **0.1Hz to 1THz**
 
-### Notes:
-- Ensure the circuit is **correctly connected** before running simulations.
-- Adjust parameters if necessary to **optimize performance**.
-- Compare results from different analyses to understand circuit behavior.
 
 
 ## Results:
 ### DC Analysis:
 - **DC Operating Point:**
-  - **Id = 55.55μA**
-  - **Vout = 0.543V**
-  - **Width = 0.3μm**
-  - **Q-Point:** (0.543V, 55.55μA)
+  - **Id =27.7uA**
+  - **Vout =1.77223V**
+  - **Width = 690nm**
+  - **length = 700nm**
+  - **Q-Point:** (1,77223V, 27.7uA)
+
+![Image](https://github.com/user-attachments/assets/0d6e5187-2a6e-44bc-9947-70d0613b423d)
 
 ### Transient Analysis:
 - The output shows a **180-degree phase shift** between input and output.
-- **Vout = 0.543V** at **Width = 0.3μm**.
+- **Vout = 1.77223V** at **Width = 690nm** and **length = 700nm**.
+
+![Image](https://github.com/user-attachments/assets/fa317551-685a-419a-bc34-0aa4bfb393c3)
+
 
 ### AC Analysis:
-- **Gain = -20dB** in the mid-frequency range.
+- **Gain = 30.5282dB** at 1KHz frequency.
 
 ## Inference:
 1. The MOSFET's **current (Id) is directly proportional to its width**, affecting overall circuit performance.
-2. Operating in saturation ensures proper amplification and a stable **Q-point**.
+2. Operating in saturation region.
 3. Transient analysis helps in evaluating the circuit’s response to time-varying signals, crucial for high-speed applications.
 4. AC analysis aids in designing amplifiers with desired gain and understanding frequency behavior.
 5. The overall analysis ensures proper design, optimization, and stability of the amplifier circuit.
