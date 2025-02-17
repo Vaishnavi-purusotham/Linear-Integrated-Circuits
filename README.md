@@ -100,7 +100,7 @@ A *diode-connected MOSFET* is always in saturation and acts as a *constant curre
 
 ### AC Analysis:
 
-
+![Image](https://github.com/user-attachments/assets/32374058-815c-419e-8dac-d4ea39a328eb)
 
 ## Gain:
 
@@ -124,9 +124,8 @@ Practical result: *Gain = 30.5282dB* at 1KHz frequency.
 
 ## Components Required:
 - NMOS (nmos4) and PMOS(pmos4)
-- Resistor (1kΩ)
 - Voltage sources (1.8V, 0.9V)
-- Bias DC source (1.37V)
+- Bias DC source (-2.5V)
 
 ## Circuit diagram:
 
