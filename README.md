@@ -102,10 +102,14 @@ A *diode-connected MOSFET* is always in saturation and acts as a *constant curre
 
 
 
-*Gain = 30.5282dB* at 1KHz frequency.
+## Gain:
 
+*Av = -gm Rd*
+*gm = 1/lamda*Id*
 
+Practical result: *Gain = 30.5282dB* at 1KHz frequency.
 
+![Image](https://github.com/user-attachments/assets/cfd3639c-1092-42e1-a5f8-d90c843707af)
 
 ## Inference:
 1. The MOSFET's *current (Id) is directly proportional to its width*, affecting overall circuit performance.
