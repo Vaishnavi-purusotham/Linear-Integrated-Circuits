@@ -129,6 +129,7 @@ Practical result: *Gain = 30.5282dB* at 1KHz frequency.
 
 ## Circuit diagram:
 
+![Image](https://github.com/user-attachments/assets/9a419501-4d55-425b-94e7-36d225453950)
 
 
 ### Procedure:
@@ -139,8 +140,8 @@ Practical result: *Gain = 30.5282dB* at 1KHz frequency.
    - As the MOSFET should be in saturation region,
      Here Vb is connected to gate , so for us both the mosfet should be in saturation so for that Vgs>Vt 
     |Vg-Vs|>|Vt|
-    here Vg is unknown so I calculated Vg that Vg =Vb
-    Vb=1.37V
+    here Vg is unknown so I calculated Vg ie Vg =Vb
+    Vb=-2V
    - Run DC analysis to determine *Vout* and *Id*.
 
 3. *Transient Analysis:*
@@ -157,25 +158,38 @@ Practical result: *Gain = 30.5282dB* at 1KHz frequency.
 - *DC Operating Point:*
   - *Id1 =27.7uA*
   - *Id2 =27.7uA*
-  - *Vout =1.77223V*
+  - *Vout =1.79981V*
   - *Width = 690nm* (NMOS)
   - *length = 700nm* (NMOS)
   -  *Width = 360Um* (PMOS)
   - *length = 302nm* (PMOS)
-  - *Q-Point:* (1,77223V, 27.7uA)
+  - *Q-Point:* (1,79981V, 27.7uA)
 
 
+![Image](https://github.com/user-attachments/assets/076773ae-cb10-45f6-bed1-9193ff1f8564)
 
 
 ### Transient Analysis:
 - The output shows a *180-degree phase shift* between input and output.
-- *Vout = 1.77223V* 
+- *Vout = 1.79981V* 
 
+
+![Image](https://github.com/user-attachments/assets/0645a560-4518-4b8d-810f-b852f6cfc73f)
 
 
 
 ### AC Analysis:
-- *Gain = 30.2944dB* at 1KHz frequency.
+
+![Image](https://github.com/user-attachments/assets/efdabf4f-7389-4f89-a955-7690d7be3f20)
+
+## Gain:
+
+*Av = -gm Rd*
+*gm = 1/lamda*Id*
+
+Practical result: *Gain = 36.7361dB* at 1KHz frequency.
+
+![Image](https://github.com/user-attachments/assets/b8175d28-f620-4588-9f58-48f3623757c7)
 
 ## Inference
 
