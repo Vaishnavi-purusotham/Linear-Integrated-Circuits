@@ -99,7 +99,11 @@ A *diode-connected MOSFET* is always in saturation and acts as a *constant curre
 
 
 ### AC Analysis:
-- *Gain = 30.5282dB* at 1KHz frequency.
+
+
+
+*Gain = 30.5282dB* at 1KHz frequency.
+
 
 
 
