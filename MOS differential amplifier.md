@@ -192,7 +192,7 @@ Vout(min) = Vgs-Vt
 
 ## Circuit diagram:
 
-![Image](https://github.com/user-attachments/assets/e3e34c82-ed6e-4d07-bcaf-bcdcda963e6b)
+![Image](https://github.com/user-attachments/assets/41bec9b8-6d03-428d-8719-14d4c8ac80d0)
 
 
 ## Procedure:
@@ -209,18 +209,21 @@ Vout(min) = Vgs-Vt
   - *length = 180nm*
   - *Q-Point:* (1,70023V, 0.4372mA)
 
-![Image](https://github.com/user-attachments/assets/94135aab-4be2-4285-be01-47d74c205da3)
+![Image](https://github.com/user-attachments/assets/2b20c925-fa16-470a-a65c-4ef9342a835a)
+
 
 ### Transient Analysis:
 - The output shows a *180-degree phase shift* between input and output.
 - *Vout = 1.70005V* at *Width = 2529nm* and *length = 180nm*.
 
-![Image](https://github.com/user-attachments/assets/8c96f460-1276-4491-93cb-1792c37d2d2b)
+
+![Image](https://github.com/user-attachments/assets/fdfb228f-2cba-40c2-84e2-a133d0bcfdf7)
 
 
 ### AC Analysis:
 
-![Image](https://github.com/user-attachments/assets/e3ba49d1-0ef7-4a58-bc92-02ba09646aff)
+![Image](https://github.com/user-attachments/assets/97950060-3f1e-40eb-81be-64e7ce864571)
+
 
 ## Gain:
 
@@ -231,7 +234,7 @@ Vout(min) = Vgs-Vt
 
 Practical result: *Gain = 28.8327dB* at 1KHz frequency.
 
-![Image](https://github.com/user-attachments/assets/e95b8718-13ea-49ed-8e30-3480caa5344f)
+![Image](https://github.com/user-attachments/assets/5be6398c-6b9f-4437-b483-32c7fefe8a62)
 
 ## What happens if we vary Vicm?
 
@@ -241,12 +244,12 @@ Lets vary Vicm to 1.8V instead of 1.6V and observe changes
 
 ## DC Analysis:
 - *DC Operating Point:*
-  - *Id =0.5167mA*
-  - *Iss =1.033mA*
-  - *Vout =1.4274V*
+  - *Id =0.43725mA*
+  - *Iss =0.8745mA*
+  - *Vout =1.70023V*
   - *Width = 2529nm*
   - *length = 180nm*
-  - *Q-Point:* (1.4274V, 0.5167mA)
+  - *Q-Point:* (1.70023V, 0.43725mA)
 
 ![Image](https://github.com/user-attachments/assets/51f9bc56-cc43-486f-a2c9-7407639e5cab)
 
