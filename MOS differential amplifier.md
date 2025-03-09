@@ -130,40 +130,36 @@ Practical result: *Gain = 29.033dB* at 1KHz frequency.
 
 Lets vary Vicm to 1.8V instead of 1.6V and observe changes 
 
-## Results:
+
 
 ## DC Analysis:
 - *DC Operating Point:*
-  - *Id =0.4373mA*
-  - *Iss =0.8746mA*
-  - *Vout =1.70005V*
+  - *Id =0.5167mA*
+  - *Iss =1.033mA*
+  - *Vout =1.4274V*
   - *Width = 2529nm*
   - *length = 180nm*
-  - *Q-Point:* (1,70005V, 0.4373mA)
+  - *Q-Point:* (1.4274V, 0.5167mA)
 
-![Image](https://github.com/user-attachments/assets/94135aab-4be2-4285-be01-47d74c205da3)
+![Image](https://github.com/user-attachments/assets/51f9bc56-cc43-486f-a2c9-7407639e5cab)
 
 ### Transient Analysis:
 - The output shows a *180-degree phase shift* between input and output.
 - *Vout = 1.70005V* at *Width = 2529nm* and *length = 180nm*.
 
-![Image](https://github.com/user-attachments/assets/8c96f460-1276-4491-93cb-1792c37d2d2b)
+![Image](https://github.com/user-attachments/assets/b5362c62-8e60-4aa1-ad80-7e36ebbc73eb)
 
 ### AC Analysis:
 
-![Image](https://github.com/user-attachments/assets/e3ba49d1-0ef7-4a58-bc92-02ba09646aff)
+![Image](https://github.com/user-attachments/assets/50abcd53-420c-40d6-8766-be1e18d18375)
 
 
 ## Gain:
 
-*Av = -gm Rd*<br>
-*Av = 3.8988*<br>
-*Gain in dB = 20*log10(Av)*
-           <br>= *27.21dB*
+Practical result: *Gain = 28.971dB* at 1KHz frequency.
 
-Practical result: *Gain = 29.033dB* at 1KHz frequency.
+![Image](https://github.com/user-attachments/assets/ba378881-d9c1-431e-be32-6799fa4ec30e)
 
-![Image](https://github.com/user-attachments/assets/e95b8718-13ea-49ed-8e30-3480caa5344f)
 
 ## Output minimum and maximum swing:
 
@@ -188,90 +184,110 @@ Vout(min) = Vgs-Vt
 ![Image](https://github.com/user-attachments/assets/ba4b3923-5704-4c80-a1a9-c1b854147d87)
 
 
-## Inference:
-1. The MOSFET's *current (Id) is directly proportional to its width*, affecting overall circuit performance.
-2. Operating in saturation region.
-3. Transient analysis helps in evaluating the circuit’s response to time-varying signals, crucial for high-speed applications.
-4. AC analysis aids in designing amplifiers with desired gain and understanding frequency behavior.
-5. The overall analysis ensures proper design, optimization, and stability of the amplifier circuit.
+
 
    
 
-## Task 2: CS Amplifier with Diode-Connected MOSFET
-
-## Components Required:
-- NMOS (nmos4) and PMOS(pmos4)
-- Voltage sources (1.8V, 0.9V)
-- Bias DC source (-2.5V)
+## Task 2: Differential amplifier with tail current source
 
 ## Circuit diagram:
 
-![Image](https://github.com/user-attachments/assets/9a419501-4d55-425b-94e7-36d225453950)
+![Image](https://github.com/user-attachments/assets/e3e34c82-ed6e-4d07-bcaf-bcdcda963e6b)
 
 
-### Procedure:
-1. Set the PMOS transistor (CMOSP) with a length of *302nm* and width of *360μm*.
+## Procedure:
 
-2. *DC Analysis:*
-   - Apply *Vdd = 1.8V* , *Vin = 0.9V* 
-   - As the MOSFET should be in saturation region,
-     Here Vb is connected to gate , so for us both the mosfet should be in saturation so for that Vgs>Vt 
-    |Vg-Vs|>|Vt|
-    here Vg is unknown so I calculated Vg ie Vg =Vb
-    Vb=-2V
-   - Run DC analysis to determine *Vout* and *Id*.
-
-3. *Transient Analysis:*
-   - Apply a sine wave input and observe the response.
-
-4. *AC Analysis:*
-   - Run AC analysis to measure gain and frequency response.
-
+*Follow the same procedure as task 1 and do the circuit by replacing Rss with current source* 
 
 ## Results:
-
-
-### DC Analysis:
+## DC Analysis:
 - *DC Operating Point:*
-  - *Id1 =27.7uA*
-  - *Id2 =27.7uA*
-  - *Vout =1.79981V*
-  - *Width = 690nm* (NMOS)
-  - *length = 700nm* (NMOS)
-  -  *Width = 360Um* (PMOS)
-  - *length = 302nm* (PMOS)
-  - *Q-Point:* (1,79981V, 27.7uA)
+  - *Id =0.4372mA*
+  - *Iss =0.8745mA*
+  - *Vout =1.70023V*
+  - *Width = 2529nm*
+  - *length = 180nm*
+  - *Q-Point:* (1,70023V, 0.4372mA)
 
-
-![Image](https://github.com/user-attachments/assets/076773ae-cb10-45f6-bed1-9193ff1f8564)
-
+![Image](https://github.com/user-attachments/assets/94135aab-4be2-4285-be01-47d74c205da3)
 
 ### Transient Analysis:
 - The output shows a *180-degree phase shift* between input and output.
-- *Vout = 1.79981V* 
+- *Vout = 1.70005V* at *Width = 2529nm* and *length = 180nm*.
 
-
-![Image](https://github.com/user-attachments/assets/0645a560-4518-4b8d-810f-b852f6cfc73f)
-
+![Image](https://github.com/user-attachments/assets/8c96f460-1276-4491-93cb-1792c37d2d2b)
 
 
 ### AC Analysis:
 
-![Image](https://github.com/user-attachments/assets/efdabf4f-7389-4f89-a955-7690d7be3f20)
+![Image](https://github.com/user-attachments/assets/e3ba49d1-0ef7-4a58-bc92-02ba09646aff)
 
 ## Gain:
 
-*Av = -gm Rd*
-*gm = 1/lamda*Id*
+*Av = -gm Rd*<br>
+*Av = 3.8988*<br>
+*Gain in dB = 20*log10(Av)*
+           <br>= *27.21dB*
 
-Practical result: *Gain = 36.7361dB* at 1KHz frequency.
+Practical result: *Gain = 28.8327dB* at 1KHz frequency.
 
-![Image](https://github.com/user-attachments/assets/b8175d28-f620-4588-9f58-48f3623757c7)
+![Image](https://github.com/user-attachments/assets/e95b8718-13ea-49ed-8e30-3480caa5344f)
 
-## Inference
+## What happens if we vary Vicm?
 
-1. The MOSFET's **drain current (Id) is directly proportional to its width (W)**, influencing circuit performance and power consumption.  
-2. The MOSFET operates in the **saturation region** for amplification, ensuring a stable output.  
-3. **Transient analysis** evaluates the circuit’s response to time-varying signals, which is crucial for high-speed applications and switching performance.  
-4. **AC analysis** helps in designing amplifiers by determining gain, bandwidth, and frequency response.  
-5. A comprehensive analysis ensures **optimal design, performance, and stability** of the amplifier circuit.
+Lets vary Vicm to 1.8V instead of 1.6V and observe changes 
+
+
+
+## DC Analysis:
+- *DC Operating Point:*
+  - *Id =0.5167mA*
+  - *Iss =1.033mA*
+  - *Vout =1.4274V*
+  - *Width = 2529nm*
+  - *length = 180nm*
+  - *Q-Point:* (1.4274V, 0.5167mA)
+
+![Image](https://github.com/user-attachments/assets/51f9bc56-cc43-486f-a2c9-7407639e5cab)
+
+### Transient Analysis:
+- The output shows a *180-degree phase shift* between input and output.
+- *Vout = 1.70005V* at *Width = 2529nm* and *length = 180nm*.
+
+![Image](https://github.com/user-attachments/assets/b5362c62-8e60-4aa1-ad80-7e36ebbc73eb)
+
+### AC Analysis:
+
+![Image](https://github.com/user-attachments/assets/50abcd53-420c-40d6-8766-be1e18d18375)
+
+
+## Gain:
+
+Practical result: *Gain = 28.971dB* at 1KHz frequency.
+
+![Image](https://github.com/user-attachments/assets/ba378881-d9c1-431e-be32-6799fa4ec30e)
+
+
+## Output minimum and maximum swing:
+
+The output minimum and maximum swing of a MOS differential amplifier are critical to understanding its dynamic range. The output swing defines the voltage range over which the amplifier can operate linearly, without clipping or distorting the signal.
+
+The maximum output swing corresponds to the highest voltage the output can reach without saturating the MOSFET on the high side of the differential pair. This is determined by the saturation region of the MOSFETs and the voltage drop across the load resistor.
+
+The minimum output swing corresponds to the lowest voltage the output can reach without saturating the MOSFET on the low side of the differential pair. The minimum output swing is limited by the drain-to-source voltage of the transistor in the low state.
+
+## Calculation:
+
+Vout(max) = Vdd-Vd(sat)<br>
+          = 3.2V-0.228V
+          = 2.972V
+
+Vout(min) = Vgs-Vt
+          = 1V-0.489V
+          =0.511V
+
+## Result
+
+![Image](https://github.com/user-attachments/assets/ba4b3923-5704-4c80-a1a9-c1b854147d87)
+
+
