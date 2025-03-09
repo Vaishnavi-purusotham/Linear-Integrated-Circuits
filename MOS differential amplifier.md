@@ -10,7 +10,7 @@ The MOS differential amplifier is a key component in analog circuits that amplif
 
 The performance of a MOS differential amplifier is characterized by parameters such as differential gain, transconductance (gm), and common-mode rejection ratio (CMRR). The amplifier's ability to reject common-mode noise, expressed by CMRR, is particularly crucial in minimizing interference from external sources. Biasing the differential pair, often using current mirrors or active loads, ensures proper operation and stability of the amplifier.
 
-
+![Image](https://github.com/user-attachments/assets/4eb8c832-f45d-4463-89be-12299225f6e8)
 
 
 ## Design question: Design differential amplifier for the following specification and 
@@ -57,6 +57,7 @@ Rd= Vdd-Vocm/Id1 <br>
 
 ## Circuit diagram:
 
+![Image](https://github.com/user-attachments/assets/e3e34c82-ed6e-4d07-bcaf-bcdcda963e6b)
 
 
 ## Procedure:
@@ -101,18 +102,18 @@ Rd= Vdd-Vocm/Id1 <br>
   - *length = 180nm*
   - *Q-Point:* (1,70005V, 0.4373mA)
 
-![Image](https://github.com/user-attachments/assets/0d6e5187-2a6e-44bc-9947-70d0613b423d)
+![Image](https://github.com/user-attachments/assets/94135aab-4be2-4285-be01-47d74c205da3)
 
 ### Transient Analysis:
 - The output shows a *180-degree phase shift* between input and output.
 - *Vout = 1.70005V* at *Width = 2529nm* and *length = 180nm*.
 
-![Image](https://github.com/user-attachments/assets/fa317551-685a-419a-bc34-0aa4bfb393c3)
+![Image](https://github.com/user-attachments/assets/8c96f460-1276-4491-93cb-1792c37d2d2b)
 
 
 ### AC Analysis:
 
-![Image](https://github.com/user-attachments/assets/32374058-815c-419e-8dac-d4ea39a328eb)
+![Image](https://github.com/user-attachments/assets/e3ba49d1-0ef7-4a58-bc92-02ba09646aff)
 
 ## Gain:
 
@@ -123,11 +124,46 @@ Rd= Vdd-Vocm/Id1 <br>
 
 Practical result: *Gain = 29.033dB* at 1KHz frequency.
 
-![Image](https://github.com/user-attachments/assets/cfd3639c-1092-42e1-a5f8-d90c843707af)
+![Image](https://github.com/user-attachments/assets/e95b8718-13ea-49ed-8e30-3480caa5344f)
 
 ## What happens if we vary Vicm?
 
 Lets vary Vicm to 1.8V instead of 1.6V and observe changes 
+
+## Results:
+
+## DC Analysis:
+- *DC Operating Point:*
+  - *Id =0.4373mA*
+  - *Iss =0.8746mA*
+  - *Vout =1.70005V*
+  - *Width = 2529nm*
+  - *length = 180nm*
+  - *Q-Point:* (1,70005V, 0.4373mA)
+
+![Image](https://github.com/user-attachments/assets/94135aab-4be2-4285-be01-47d74c205da3)
+
+### Transient Analysis:
+- The output shows a *180-degree phase shift* between input and output.
+- *Vout = 1.70005V* at *Width = 2529nm* and *length = 180nm*.
+
+![Image](https://github.com/user-attachments/assets/8c96f460-1276-4491-93cb-1792c37d2d2b)
+
+### AC Analysis:
+
+![Image](https://github.com/user-attachments/assets/e3ba49d1-0ef7-4a58-bc92-02ba09646aff)
+
+
+## Gain:
+
+*Av = -gm Rd*<br>
+*Av = 3.8988*<br>
+*Gain in dB = 20*log10(Av)*
+           <br>= *27.21dB*
+
+Practical result: *Gain = 29.033dB* at 1KHz frequency.
+
+![Image](https://github.com/user-attachments/assets/e95b8718-13ea-49ed-8e30-3480caa5344f)
 
 ## Output minimum and maximum swing:
 
@@ -149,7 +185,7 @@ Vout(min) = Vgs-Vt
 
 ## Result
 
-
+![Image](https://github.com/user-attachments/assets/ba4b3923-5704-4c80-a1a9-c1b854147d87)
 
 
 ## Inference:
