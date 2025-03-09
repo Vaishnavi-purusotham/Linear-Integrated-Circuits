@@ -273,4 +273,85 @@ Practical result: *Gain = 28.82dB* at 1KHz frequency.
 
 
 
+## Task 3: Differential amplifier having NMOS replacing the current source
+
+## Circuit diagram:
+
+![Image](https://github.com/user-attachments/assets/e3e34c82-ed6e-4d07-bcaf-bcdcda963e6b)
+
+
+## Procedure:
+
+*Follow the same procedure as task 1 and do the circuit by replacing Rss with current source* 
+
+
+## Results:
+## DC Analysis:
+- *DC Operating Point:*
+  - *Id =0.4371mA*
+  - *Iss =0.8742mA*
+  - *Vout =1.70073V*
+  - *Width = 2529nm*
+  - *length = 180nm*
+  - *Q-Point:* (1,70073V, 0.4371mA)
+
+![Image](https://github.com/user-attachments/assets/94135aab-4be2-4285-be01-47d74c205da3)
+
+### Transient Analysis:
+- The output shows a *180-degree phase shift* between input and output.
+- *Vout = 1.70073V* at *Width = 2529nm* and *length = 180nm*.
+
+![Image](https://github.com/user-attachments/assets/8c96f460-1276-4491-93cb-1792c37d2d2b)
+
+
+### AC Analysis:
+
+![Image](https://github.com/user-attachments/assets/e3ba49d1-0ef7-4a58-bc92-02ba09646aff)
+
+## Gain:
+
+*Av = -gm Rd*<br>
+*Av = 3.8988*<br>
+*Gain in dB = 20*log10(Av)*
+           <br>= *27.21dB*
+
+Practical result: *Gain = 28.874dB* at 1KHz frequency.
+
+![Image](https://github.com/user-attachments/assets/e95b8718-13ea-49ed-8e30-3480caa5344f)
+
+## What happens if we vary Vicm?
+
+Lets vary Vicm to 1.8V instead of 1.6V and observe changes 
+
+
+
+## DC Analysis:
+- *DC Operating Point:*
+  - *Id =0.5167mA*
+  - *Iss =1.033mA*
+  - *Vout =1.4274V*
+  - *Width = 2529nm*
+  - *length = 180nm*
+  - *Q-Point:* (1.4274V, 0.5167mA)
+
+![Image](https://github.com/user-attachments/assets/51f9bc56-cc43-486f-a2c9-7407639e5cab)
+
+### Transient Analysis:
+- The output shows a *180-degree phase shift* between input and output.
+- *Vout = 1.70005V* at *Width = 2529nm* and *length = 180nm*.
+
+![Image](https://github.com/user-attachments/assets/b5362c62-8e60-4aa1-ad80-7e36ebbc73eb)
+
+### AC Analysis:
+
+![Image](https://github.com/user-attachments/assets/50abcd53-420c-40d6-8766-be1e18d18375)
+
+
+## Gain:
+
+Practical result: *Gain = 28.971dB* at 1KHz frequency.
+
+![Image](https://github.com/user-attachments/assets/ba378881-d9c1-431e-be32-6799fa4ec30e)
+
+
 
