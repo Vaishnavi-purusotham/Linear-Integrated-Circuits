@@ -251,46 +251,26 @@ Lets vary Vicm to 1.8V instead of 1.6V and observe changes
   - *length = 180nm*
   - *Q-Point:* (1.70023V, 0.43725mA)
 
-![Image](https://github.com/user-attachments/assets/51f9bc56-cc43-486f-a2c9-7407639e5cab)
+![Image](https://github.com/user-attachments/assets/fa2e5670-d4ce-4e69-895f-128833333654)
 
 ### Transient Analysis:
 - The output shows a *180-degree phase shift* between input and output.
 - *Vout = 1.70005V* at *Width = 2529nm* and *length = 180nm*.
 
-![Image](https://github.com/user-attachments/assets/b5362c62-8e60-4aa1-ad80-7e36ebbc73eb)
+![Image](https://github.com/user-attachments/assets/153204c9-2d62-489d-8810-fb7bc6bd7699)
+
 
 ### AC Analysis:
 
-![Image](https://github.com/user-attachments/assets/50abcd53-420c-40d6-8766-be1e18d18375)
+![Image](https://github.com/user-attachments/assets/998b697d-0781-4601-a836-1cbccda6d154)
 
 
 ## Gain:
 
-Practical result: *Gain = 28.971dB* at 1KHz frequency.
+Practical result: *Gain = 28.82dB* at 1KHz frequency.
 
-![Image](https://github.com/user-attachments/assets/ba378881-d9c1-431e-be32-6799fa4ec30e)
+![Image](https://github.com/user-attachments/assets/9dea65d0-15aa-42c9-a494-8c4fa18d1824)
 
 
-## Output minimum and maximum swing:
-
-The output minimum and maximum swing of a MOS differential amplifier are critical to understanding its dynamic range. The output swing defines the voltage range over which the amplifier can operate linearly, without clipping or distorting the signal.
-
-The maximum output swing corresponds to the highest voltage the output can reach without saturating the MOSFET on the high side of the differential pair. This is determined by the saturation region of the MOSFETs and the voltage drop across the load resistor.
-
-The minimum output swing corresponds to the lowest voltage the output can reach without saturating the MOSFET on the low side of the differential pair. The minimum output swing is limited by the drain-to-source voltage of the transistor in the low state.
-
-## Calculation:
-
-Vout(max) = Vdd-Vd(sat)<br>
-          = 3.2V-0.228V
-          = 2.972V
-
-Vout(min) = Vgs-Vt
-          = 1V-0.489V
-          =0.511V
-
-## Result
-
-![Image](https://github.com/user-attachments/assets/ba4b3923-5704-4c80-a1a9-c1b854147d87)
 
 
