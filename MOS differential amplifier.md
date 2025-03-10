@@ -179,13 +179,19 @@ Vout(min) = Vgs-Vt
           = 1V-0.489V
           =0.511V
 
-## Result
+## Result:
 
 ![Image](https://github.com/user-attachments/assets/ba4b3923-5704-4c80-a1a9-c1b854147d87)
 
+## Final result with Inference:
 
+| Parameter    | Value  | Value when Vicm varied |
+|-------------|--------|------|
+| Vout   | 1.70005V  | 1.4274V    |  
+| Id   | 0.4373V  | 0.5167mA   | 
+| Gain  | 29.033dB | 28.9719dB  | 
 
-
+Due to the increses in the input node the volatge in the output node decreses because its corresponding transistor conducts more current, leading to large voltage drop across the load. 
    
 
 ## Task 2: Differential amplifier with tail current source
@@ -271,7 +277,15 @@ Practical result: *Gain = 28.82dB* at 1KHz frequency.
 
 ![Image](https://github.com/user-attachments/assets/9dea65d0-15aa-42c9-a494-8c4fa18d1824)
 
+## Final result with Inference:
 
+| Parameter    | Value  | Value when Vicm varied |
+|-------------|--------|------|
+| Vout   | 1.70023V  | 1.70023V    |  
+| Id   | 0.4372V  | 0.4372mA   | 
+| Gain  | 28.8327dB | 28.82dB  | 
+
+There is no much variation in Vout and Id as the current sorce is providing fixed current but there is a very small amount of decreses in gain. 
 
 ## Task 3: Differential amplifier having NMOS replacing the current source
 
@@ -348,4 +362,13 @@ Practical result: *Gain = 28.8406dB* at 1KHz frequency.
 
 ![Image](https://github.com/user-attachments/assets/086e3120-5020-4fba-b6e4-d94415b2559c)
 
+## Final result with Inference:
 
+| Parameter    | Value  | Value when Vicm varied |
+|-------------|--------|------|
+| Vout   | 1.70073V  | 1.6540V    |  
+| Id   | 0.4371A | 0.4506mA   | 
+| Gain  | 28.87dB | 28.840dB  | 
+
+ Due to the increses in the input node the volatge in the output node decreses because its corresponding transistor conducts more current, leading to large voltage drop across the load. But the gain is stable because differential gain is proportional to gm * R_D, where gm is the transconductance of the input MOSFETs.
+If the increase in Iss increases gm, but the same current redistribution happens in both branches, the overall gain remains the same.
