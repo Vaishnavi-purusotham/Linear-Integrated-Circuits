@@ -369,7 +369,7 @@ Practical result: *Gain = 28.8406dB* at 1KHz frequency.
 If the increase in Iss increases gm, but the same current redistribution happens in both branches, the overall gain remains the same.
 
 
-##Comparision between the three circuits:
+## Comparision between the three circuits:
 
 | Circuit attribute(with input 1.6V)   | Circuit 1 | Circuit 2 | Circuit 3              |
 |-------------|--------|------|----------------------------|
