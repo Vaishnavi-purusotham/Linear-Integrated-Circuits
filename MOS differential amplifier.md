@@ -372,3 +372,17 @@ Practical result: *Gain = 28.8406dB* at 1KHz frequency.
 
  Due to the increses in the input node the volatge in the output node decreses because its corresponding transistor conducts more current, leading to large voltage drop across the load. But the gain is stable because differential gain is proportional to gm * R_D, where gm is the transconductance of the input MOSFETs.
 If the increase in Iss increases gm, but the same current redistribution happens in both branches, the overall gain remains the same.
+
+
+##Comparision between the three circuits:
+
+| Circuit attribute(with input 1.6V)   | Circuit 1 | Circuit 2 | Circuit 3              |
+|-------------|--------|------|----------------------------|
+| Vout(V)  | 1.7000V | 1.7002  | 1.700   |
+| Id(mA)  | 0.437  | 0.437 | 0.437   |
+| Iss(mA)   | 0.874 | 0.874  | 0.874  |
+| Gain(dB)  | 29.033 | 28.8327   | 28.87|
+
+
+
+
