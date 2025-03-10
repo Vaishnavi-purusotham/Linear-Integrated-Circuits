@@ -329,24 +329,23 @@ Lets vary Vicm to 1.8V instead of 1.6V and observe changes
   - *length = 180nm*
   - *Q-Point:* (1.65401V, 0.4506mA)
 
-![Image](https://github.com/user-attachments/assets/51f9bc56-cc43-486f-a2c9-7407639e5cab)
+![Image](https://github.com/user-attachments/assets/aff3e02c-3fb9-4887-b16a-3568c4480742)
 
 ### Transient Analysis:
 - The output shows a *180-degree phase shift* between input and output.
 - *Vout = 1.65401V* at *Width = 2529nm* and *length = 180nm*.
 
-![Image](https://github.com/user-attachments/assets/b5362c62-8e60-4aa1-ad80-7e36ebbc73eb)
+![Image](https://github.com/user-attachments/assets/d3a5ee33-ff05-4ef5-83ed-c70b12aa9c87)
 
 ### AC Analysis:
 
-![Image](https://github.com/user-attachments/assets/50abcd53-420c-40d6-8766-be1e18d18375)
+![Image](https://github.com/user-attachments/assets/6e8fda46-ae58-4750-8ba9-e4ba73374f35)
 
 
 ## Gain:
 
 Practical result: *Gain = 28.8406dB* at 1KHz frequency.
 
-![Image](https://github.com/user-attachments/assets/ba378881-d9c1-431e-be32-6799fa4ec30e)
-
+![Image](https://github.com/user-attachments/assets/086e3120-5020-4fba-b6e4-d94415b2559c)
 
 
