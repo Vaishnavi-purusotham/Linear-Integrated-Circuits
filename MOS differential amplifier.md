@@ -384,5 +384,7 @@ If the increase in Iss increases gm, but the same current redistribution happens
 | Gain(dB)  | 29.033 | 28.8327   | 28.87|
 
 
+Theoritically, circuit 2 should have the highest gain as ideal current source is used which offeres infinite resistence. But by the result that we obtained practically, gain got decreased in both circuit 2 and 3.
 
-
+- Possible reason for changes in gain
+  The current source may not be truly ideal and can offer some resistence, which results in source degeneration and reduced the gain.
