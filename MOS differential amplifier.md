@@ -233,11 +233,6 @@ Due to the increses in the input node the volatge in the output node decreses be
 
 ## Gain:
 
-*Av = -gm Rd*<br>
-*Av = 3.8988*<br>
-*Gain in dB = 20*log10(Av)*
-           <br>= *27.21dB*
-
 Practical result: *Gain = 28.8327dB* at 1KHz frequency.
 
 ![Image](https://github.com/user-attachments/assets/5be6398c-6b9f-4437-b483-32c7fefe8a62)
